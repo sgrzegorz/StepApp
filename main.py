@@ -4,7 +4,7 @@ from scipy.signal import find_peaks
 import matplotlib.pyplot as plt
 
 #https://www.mathworks.com/help/matlabmobile_android/ug/counting-steps-by-capturing-acceleration-data.html
-df = pd.read_csv("Accelerometer1.csv",names=["time","seconds_elapsed","z","y","x"],skiprows=1)
+df = pd.read_csv("data/20steps/Accelerometer6.csv",names=["time","seconds_elapsed","z","y","x"],skiprows=1)
 # t = list(df.time)
 t = np.arange(0,df.shape[0])
 x = list(df.x)
